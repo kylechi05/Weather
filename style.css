@@ -1,35 +1,74 @@
 * {
   font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(35, 35, 35);
+  background-image: url("https://images.unsplash.com/photo-1504892612018-159ffa1d147f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .card {
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    border-radius: 25px;
-    background: linear-gradient(rgba(23, 0, 255, 0.8), rgba(0, 99, 255, 0.8));
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 25px;
+  background: linear-gradient(rgba(135, 20, 161, 0.85), rgba(253, 76, 85, 0.85));
+}
+
+.search {
+  display: flex;
 }
 
 .search-bar {
+  width: 50%;
   padding: 10px 20px;
   border-radius: 25px;
+  margin: 5px 15px;
 }
 
 .material-symbols-outlined {
+  width: 35px;
+  height: 35px;
   padding: 5px;
   border-radius: 50%;
+  margin: 5px;
   font-variation-settings:
   'FILL' 1,
   'wght' 350,
   'GRAD' 0,
-  'opsz' 48;
-  
+  'opsz' 48
+}
+
+.material-symbols-outlined:hover {
+  filter: brightness(85%);
+}
+
+.material-symbols-outlined:active {
+  filter: brightness(80%);
+}
+
+.weather {
+  line-height: 35px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.weather h1 {
+  line-height: 50px;
+}
+
+.weather #location {
+  font-size: 35px;
 }
