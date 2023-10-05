@@ -1,4 +1,4 @@
-let apiKey = "bf5b4bc38648b1b0564d37450097ee4c"
+let apiKey = ""
 
 const searchCity = document.querySelector(".search");
 const city = document.getElementById("search-bar");
@@ -10,7 +10,7 @@ async function displayData(x) { // Take in the City
     searchCity.reset();
     city.blur();
 
-    const fetchData = await fetch("https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + x + "&appid=bf5b4bc38648b1b0564d37450097ee4c");
+    const fetchData = await fetch("https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + x + "&appid=");
     let cityData = await fetchData.json();
 
     console.log(cityData);
