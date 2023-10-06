@@ -1,3 +1,4 @@
 # .gitignore
 
-apiKey.js
+# api key from OpenWeatherMap
+apiKey.js 

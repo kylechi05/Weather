@@ -1,4 +1,4 @@
-let apiKey = "bf5b4bc38648b1b0564d37450097ee4c"
+const key = "";
 
 const windDirection = {0: "N", 1: "NNE", 3: "NE", 4: "ENE",
                        5: "E", 6: "ESE", 7: "SE", 8: "SSE",
@@ -15,7 +15,7 @@ async function displayData(x) { // Take in the City
     searchCity.reset();
     city.blur();
 
-const fetchData = await fetch("https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + x + "&appid=" + apiKey);
+const fetchData = await fetch("https://api.openweathermap.org/data/2.5/weather?units=imperial&q=" + x + "&appid=" + key);
     let cityData = await fetchData.json();
 
     console.log(cityData);
